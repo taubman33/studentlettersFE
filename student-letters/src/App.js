@@ -8,10 +8,17 @@ function App() {
   return (
     <div className="App">
 
-      
+    <div className="App-header">
      <Header/>
+    </div> 
+   
+    <div className= "App-main">
      <Main/>
+    </div>
+
+    <div className="App-footer">
      <Footer/>
+     </div> 
   
     </div>
   );

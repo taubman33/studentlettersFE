@@ -1,6 +1,39 @@
-.App {
-  text-align: center;
+body {
   background-color: black;
   color: white;
 }
+
+.App {
+  text-align: center;
+  
+}
+
+
+.Footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 15px;
+}
+
+
+.App-header {
+  color: white;
+  background-color: black;
+  margin-top: -2rem;
+}
+
+.Header {
+  margin-top: 2rem;
+}
+
+.Main {
+margin-top: 10rem;
+
+}
+
 
