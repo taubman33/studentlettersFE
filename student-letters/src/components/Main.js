@@ -94,23 +94,26 @@ let letters = [
         }    
 ]
 
+console.log(letters.length)
 
 
+const Main = () => {
 
-function Main(props) {
-
-    let num = 0; 
-    const raiseNum = () => {
+    let num = 0;
+    function raiseNum() {    
         num = num + 1
-            
-        if (num > letters.length) {
+        
+            if (num > letters.length) {
             num = 0
-        }
-        console.log(num)
-        console.log("button working")
-    }
-
+            }
+            console.log(num)
+            console.log(letters[num].Initials)
+         }
+  
+     
+    
     return (
+        
     <div className = "Main-container">
          <div className = "Main">
             <div className="Main-text">

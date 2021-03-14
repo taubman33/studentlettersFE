@@ -18,25 +18,38 @@ body {
   text-align: center;
   margin-top: 2rem;
   padding: 15px;
+  text-shadow: 2px 2px #800a76;
 }
 
 
 .App-header {
+
   color: white;
   background-color: black;
   margin-top: -2rem;
 }
 
+
 .Header {
-  font-size: 4rem;
   margin-top: 2rem;
 }
 
+.Header-title {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 4rem;
+  text-shadow: 2px 2px #800a76;
+}
+
+.Header-subtext {
+  margin-top: -4rem;
+  margin-bottom: - 4rem
+}
 
 .Main {
   width: 80%;
   margin: auto;
-  border: .5rem solid yellow
+  margin-top: 3rem;
+  border: .5rem solid #800a76
 }
 
 .Main-container {
@@ -51,8 +64,12 @@ margin-top: 10rem;
 
 button {
   background-color: black;
-  border: 3px solid yellow;
+  border: 3px solid #800a76;
   color: white;
   padding: 20px;
 }
+
+button:hover {
+  background-color: #800a76;
+} 
 
