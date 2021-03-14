@@ -10,6 +10,7 @@ body {
 
 
 .Footer {
+  font-size: 2rem;
   background-color: black;
   color: white;
   position: fixed;
@@ -28,12 +29,18 @@ body {
 }
 
 .Header {
+  font-size: 4rem;
   margin-top: 2rem;
 }
 
-.Main {
+.Main-container {
 margin-top: 10rem;
+
 
 }
 
+.Main {
+  width: 60%;
+  margin: auto;
+}
 
