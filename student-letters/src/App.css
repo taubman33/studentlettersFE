@@ -13,7 +13,6 @@ body {
   font-size: 2rem;
   background-color: black;
   color: white;
-  position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
@@ -33,14 +32,27 @@ body {
   margin-top: 2rem;
 }
 
-.Main-container {
-margin-top: 10rem;
-
-
-}
 
 .Main {
-  width: 60%;
+  width: 80%;
   margin: auto;
+  border: .5rem solid yellow
+}
+
+.Main-container {
+margin-top: 10rem;
+}
+
+.Main-text {
+  padding: 2rem;
+  font-size: 1.5rem;
+}
+
+
+button {
+  background-color: black;
+  border: 3px solid yellow;
+  color: white;
+  padding: 20px;
 }
 
