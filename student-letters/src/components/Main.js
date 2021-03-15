@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 let letters = [
@@ -94,33 +94,35 @@ let letters = [
         }    
 ]
 
-console.log(letters.length)
+
+export default function Main () {
 
 
-const Main = () => {
-
-    let num = 0;
-    function raiseNum() {    
-        num = num + 1
-        
-            if (num > letters.length) {
-            num = 0
-            }
-            console.log(num)
-            console.log(letters[num].Initials)
+  const [num, setNum] = useState(0)
+    
+    function raiseNum() {
+        setNum(num + 1 )    
          }
   
+
+         if (num > letters.length) {
+            setNum(0)
+            }
      
     
-    return (
+    
+    // letters.map((setNum) => {
+       return (     
         
     <div className = "Main-container">
          <div className = "Main">
             <div className="Main-text">
 
-            <h3>Initials: {letters[num].Initials}</h3>
-            <h3>Location: {letters[num].Location} </h3>
-            <h3>Letter: {letters[num].Letter} </h3> 
+    
+
+           <h3>Initials:  { letters && letters[num].Initials}</h3>
+            <h3>Location: {letters && letters[num].Location} </h3>
+            <h3>Letter: {letters && letters[num].Letter} </h3> 
          
             <button id="next-letter" onClick={raiseNum}>Next Letter</button>
             </div>
@@ -128,7 +130,6 @@ const Main = () => {
           
             </div>
         </div>
-    );
-}
-
-export default Main;
+       )
+       
+    }
