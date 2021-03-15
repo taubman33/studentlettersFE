@@ -38,7 +38,7 @@ h1 {
 }
 
 h6{
-  color:rgb(236, 233, 233);
+  color:white;
   /* border: 4px white solid; */
   mix-blend-mode: screen;
   font:  3rem monospace;
