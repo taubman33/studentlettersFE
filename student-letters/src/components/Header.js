@@ -8,7 +8,7 @@ function Header(props) {
             </div>
 
             <div className="Header-subtext">
-            <h1> From the 11/30-03/04 Cohort</h1>
+            <h2> From the proud students of the SEIR 11/30-03/04 Cohort</h2>
             </div>       
             
         </div>
