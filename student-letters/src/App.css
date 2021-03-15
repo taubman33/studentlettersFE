@@ -96,6 +96,7 @@ body {
   text-shadow: 2px 2px black;
   border-radius: 25px;
   padding: 20px;
+  font-family: 'Redressed', cursive;
  
   
 }
@@ -107,11 +108,68 @@ margin-top: 10rem;
 
 .Main-text {
   padding: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  letter-spacing: 0.1em;
+
+}
+
+/* Button animation ************** */
+
+* {
+  box-sizing: border-box;
+  
 }
 
 
+button[class^="button"]::after {
+  transition: all 0.3s ease;
+}
+button[class^="button"]:hover::after {
+  transition: all 0.3s ease-out;
+}
+
 button {
+  font-size: 1em;
+  background: rgba(255, 255, 0, 0.837);
+  color: black;
+  border: 0.25rem solid yellow;
+  padding: 0.85em 0.75em;
+  margin: 1rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-shadow: 1px 1px #db34dbd4;
+  
+}
+button:hover {
+  color: #db34dbd4;
+  text-shadow: 1px 1px black;
+}
+button::after {
+  content: "";
+  background:#0df0e1 ;
+  position: absolute;
+  z-index: -1;
+  padding: 0.85em 0.75em;
+  display: block;
+}
+button.button::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: scale(0, 0) rotate(-180deg);
+}
+button.button:hover::after {
+  transform: scale(1, 1) rotate(0deg);
+}
+
+
+
+/* End of button animation ^^^^^^^******* */
+
+
+/* button {
   background-color: black;
   border: 3px solid #800a76;
   color: white;
@@ -120,5 +178,5 @@ button {
 
 button:hover {
   background-color: #800a76;
-} 
+}  */
 
