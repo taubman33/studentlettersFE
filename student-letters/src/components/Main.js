@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-
-let letters = [
+const letters = [
        {
         Initials: "TW",
         Location: "CA",
@@ -94,28 +93,32 @@ let letters = [
         }    
 ]
 
-const url = "backend site"
-
-fetch(url)
-  .then(res => {
-    return res.json();
-  })
-  .then(res => {
-    console.log("success!", res);
-  })
-  .catch(err => {
-    console.log("something went wrong...", err);
-  });
-  
-async function getData (event) {    
-   event.preventDefault()
-}
+console.log(letters.length)
 
 export default function Main () {
 
+   const [num, setNum] = useState(0)
+   // const [letters, setLetters] = useState([])
+   // const url = "backend site"
 
-  const [num, setNum] = useState(0)
-    
+
+
+
+   // fetch(url)
+   //    .then(res => {
+   //    return res.json();
+   //     })
+   //    .then(res => {
+   //   console.log("success!", res);
+   //   setLetters(res.letters);
+   //    })
+   //    .catch(err => {
+   //   console.log("something went wrong...", err);
+   //    });
+
+  
+
+
     function raiseNum() {
         setNum(num + 1 )    
          }
