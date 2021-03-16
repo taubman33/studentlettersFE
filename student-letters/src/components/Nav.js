@@ -5,8 +5,12 @@ function Nav(props) {
     return (
         <div className ="Navbar-container">
             <div className="Navbar">,
-            <Link to="/"><h3>Home</h3></Link>
-            <Link to="/letters"><h3>Letters</h3></Link>
+
+      
+     <Link to="/"><button id="home-button"> <h3>Home</h3></button></Link>
+     <Link to="/letters"><button id="home-button"> <h3>Letters</h3></button></Link>
+            
+            
             </div>
             
         </div>

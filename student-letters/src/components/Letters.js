@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
+
 
 function Letters(props) {
     const [letter, setLetter] = useState({});
@@ -16,25 +18,21 @@ function Letters(props) {
      //   raising number to scroll through pulled array
        function raiseNum() {
           setNum(num+1)
-           console.log(num)
          }
-           
-         console.log(letter.length)
-         console.log(num)
-         console.log(letter[num])
+        
  
     if (letter && num ) {
     return (
-        <div className="Letters">
-       
-             <h2>{`Student: ${letter && letter[num].initials}`}</h2>
+
+           <div className="letters"> 
+            <h2>{`Student: ${letter && letter[num].initials}`}</h2>
             <h2>{`Location: ${letter && letter[num].location}`}</h2>
             <h2>{`Location: ${letter && letter[num].letter}`}</h2> 
             <button id="next-letter" onClick={raiseNum}>Next Letter</button>
  
         </div>
- 
         )
+
 } else{
     return (
         <div className="error-message">
