@@ -2,6 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom'
 import Home from './Home'
 import Letters from './Letters'
+import Nav from './Nav'
 
 export default function Main () {
 return (
@@ -10,7 +11,8 @@ return (
      
      <Route exact path="/" component={Home} />
      <Route exact path="/letters"component={Letters}/>
-
+   
+    <Nav/>
 
    </div>
 )

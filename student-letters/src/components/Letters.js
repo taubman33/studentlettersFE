@@ -14,13 +14,15 @@ function Letters(props) {
             })
             .catch(console.error);
     }, []);
- 
-     //   raising number to scroll through pulled array
-       function raiseNum() {
-          setNum(num+1)
-         }
-        
- 
+
+         function randomNumber() {
+            let randomNum = Math.floor(Math.random() * 10);
+            setNum(randomNum)
+            if (randomNum > letter.length) {
+                randomNum = 5
+            }
+           }
+           
     if (letter && num ) {
     return (
 
@@ -28,7 +30,7 @@ function Letters(props) {
             <h2>{`Student: ${letter && letter[num].initials}`}</h2>
             <h2>{`Location: ${letter && letter[num].location}`}</h2>
             <h2>{`Location: ${letter && letter[num].letter}`}</h2> 
-            <button id="next-letter" onClick={raiseNum}>Next Letter</button>
+            <button id="next-letter" onClick={randomNumber}>Next Letter</button>
  
         </div>
         )
@@ -36,8 +38,7 @@ function Letters(props) {
 } else{
     return (
         <div className="error-message">
-            <h2> Click below to start!</h2>
-            <button id="next-letter" onClick={raiseNum}>Start Letters!</button>
+            <button id="next-letter" onClick={randomNumber}>Start Letters!</button>
         </div>
     )
 }
