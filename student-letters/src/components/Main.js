@@ -94,6 +94,22 @@ let letters = [
         }    
 ]
 
+const url = "backend site"
+
+fetch(url)
+  .then(res => {
+    return res.json();
+  })
+  .then(res => {
+    console.log("success!", res);
+  })
+  .catch(err => {
+    console.log("something went wrong...", err);
+  });
+  
+async function getData (event) {    
+   event.preventDefault()
+}
 
 export default function Main () {
 
@@ -104,15 +120,14 @@ export default function Main () {
         setNum(num + 1 )    
          }
   
-
          if (num > letters.length) {
-            setNum(0)
-            }
+          setNum(0)
+          console.log("max length reached")
+          }
      
     
     
-    // letters.map((setNum) => {
-       return (     
+   return (     
         
     <div className = "Main-container">
          <div className = "Main">
