@@ -98,32 +98,36 @@ console.log(letters.length)
 export default function Main () {
 
    const [num, setNum] = useState(0)
-   // const [letters, setLetters] = useState([])
-   // const url = "backend site"
+   const [letters, setLetters] = useState([])
+   const url = "https://sei1130-letters.herokuapp.com/students"
 
 
 
 
-   // fetch(url)
-   //    .then(res => {
-   //    return res.json();
-   //     })
-   //    .then(res => {
-   //   console.log("success!", res);
-   //   setLetters(res.letters);
-   //    })
-   //    .catch(err => {
-   //   console.log("something went wrong...", err);
-   //    });
+   fetch(url)
+      .then(res => {
+      return res.json();
+       })
+      .then(res => {
+     console.log("success!", res);
+     letters(res.letters);
+     setLetters(res.letters);
+      })
+      .catch(err => {
+     console.log("something went wrong...", err);
+      });
 
-  
+   useEffect(() => {
+      fetch(letters);
+    }, []);
 
 
     function raiseNum() {
         setNum(num + 1 )    
          }
-  
-         if (num > letters.length) {
+         
+         console.log(letters.length)
+         if (setNum > letters.length) {
           setNum(0)
           console.log("max length reached")
           }
@@ -136,12 +140,14 @@ export default function Main () {
          <div className = "Main">
             <div className="Main-text">
 
+            <h3>Initials: works </h3>
+  
     
-
+{/* 
            <h3>Initials:  { letters && letters[num].Initials}</h3>
             <h3>Location: {letters && letters[num].Location} </h3>
             <h3>Letter: {letters && letters[num].Letter} </h3> 
-         
+          */}
             <button id="next-letter" onClick={raiseNum}>Next Letter</button>
             </div>
 
