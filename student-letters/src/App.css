@@ -35,7 +35,7 @@ h1 {
 .text:hover::before {
   display: inline-block;
   content: ">_";
-  /* content: "✈︎"; */
+  
 }
 
 h6{
@@ -52,15 +52,7 @@ h6{
   outline: 4px rgba(50, 6, 43, 1) solid;
   letter-spacing: 0.1em;
 }
-/* .Header-title {
-    color:  rgb(136, 69, 230);
-    border: 4px solid;
-    background:  rgb(2, 9, 97);
-    mix-blend-mode:  multiply;
-    font:  bolder 2.5rem 'Letter';
-    text-align:  center;
-    margin:  0;
-} */
+
 
 
 /* End of Header Text ^^^^^^*******^^^^^^^ */
@@ -79,43 +71,39 @@ body {
   
 }
 
+/* ********Footer *********** */
+.links {
+  font-size: 20px;
+  position: relative;
+  color: purple;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-shadow: .5px .5px rgb(174, 171, 171)
+}
 
-.Footer {
-  font-size: 2rem;
-  background-color: black;
-  color: white;
-  bottom: 0;
-  width: 100%;
+.team {
   text-align: center;
-  margin-top: 2rem;
-  padding: 15px;
-  text-shadow: 2px 2px #800a76;
+  padding-top: 50px;
+  padding-bottom: 15px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: purple;
+  text-shadow: .5px .5px rgb(174, 171, 171)
 }
 
-
-/* .App-header {
-
-  color: black;
-  background-color: lime;
-  margin-top: -2rem;
+div .logo {
+  
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 2rem;
+  width: 100%;
+  margin-top: -1rem;
 }
 
+/* ****^^^^^End of Footer^^^******** */
 
-.Header {
-  margin-top: 2rem;
-  font-family: 'Letter';
-}
-
-.Header-title {
-  font-family: 'Letter', cursive;
-  font-size: 4rem;
-  /* text-shadow: 2px 2px #800a76; */
-/* } */
-
-/* .Header-subtext {
-  margin-top: -4rem;
-  margin-bottom: - 4rem
-}  */
 
 .Main {
   width: 80%;
@@ -141,11 +129,80 @@ margin-top: 10rem;
   text-align: center;
   
 }
-#home-button{
+ #home-button{
   margin:3rem;
   width: 20%;
 }
+/*
+#next-letter {
+  position: relative;
+  width: 120px;
+  height: 80px;
+  background: black;
+  border-radius: 10px;
+}
+
+  
+#next-letter:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-bottom-color: black;
+    border-top: 0;
+    margin-left: -13px;
+    margin-top: -13px;
+  } */
+
+
+  /* *************Button animation***** */
+
+  /* * {
+    box-sizing: border-box;
+} */
 button {
+font-size: 2em;
+background: black;
+color: #fff;
+border: 0.25rem solid #800a76;
+padding: 20px;
+margin: 1rem;
+position: relative;
+z-index: 1;
+overflow: hidden;
+
+}
+button:hover {
+color: #800a76;
+}
+button::after {
+content: "";
+background: #ecf0f1;
+position: absolute;
+z-index: -1;
+padding: 20px;
+display: block;
+
+}
+button.button::after {
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+}
+button.button:hover::after {
+  transform: skewX(45deg) scale(1, 1);
+}
+  
+
+
+
+  /* **^^^^^^End button animation^^******* */
+ /* button {
   background-color: black;
   border: 3px solid #800a76;
   color: white;
@@ -154,5 +211,4 @@ button {
 
 button:hover {
   background-color: #800a76;
-} 
-
+}   */
