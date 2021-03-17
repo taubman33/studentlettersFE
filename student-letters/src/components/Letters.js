@@ -15,7 +15,7 @@ function Letters(props) {
   }, []);
 
   function randomNumber() {
-    let randomNum = Math.floor(Math.random() * 10);
+    var randomNum = Math.floor(Math.random() * 10);
     setNum(randomNum);
     if (randomNum > letter.length) {
       randomNum = 5;
