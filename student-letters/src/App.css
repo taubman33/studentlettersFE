@@ -1,3 +1,19 @@
+.App {
+  text-align: center;
+  
+}
+
+
+body {
+  
+  background-image: url('./Images/dev-wallpaper.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+
 /* Header Text ******* */
 
 
@@ -16,7 +32,7 @@ h1 {
   color:whitesmoke;
   /* border: 4px white solid; */
   mix-blend-mode: screen;
-  font:  4.5rem monospace;
+  font:  5.5rem monospace;
   text-align: center;
   margin: 0;
   cursor: pointer;
@@ -57,40 +73,38 @@ h6{
 
 /* End of Header Text ^^^^^^*******^^^^^^^ */
 
-body {
-  
-  background-image: url('./Images/dev-wallpaper.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  
-}
 
-.App {
-  text-align: center;
-  
-}
+
 
 /* ********Footer *********** */
+.foot-container {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  position: relative ;
+  margin-top: 4rem;
+}
+ 
 .links {
   font-size: 20px;
   position: relative;
-  color: purple;
+  color: #924a8c;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  text-shadow: .5px .5px rgb(174, 171, 171)
+  /* text-shadow: .5px .5px rgb(174, 171, 171); */
+  padding-bottom: -2rem
 }
 
 .team {
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 15px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   letter-spacing: 10px;
   text-transform: uppercase;
   font-size: 20px;
   color: purple;
-  text-shadow: .5px .5px rgb(174, 171, 171)
+  /* text-shadow: .5px .5px rgb(174, 171, 171) */
 }
 
 div .logo {
@@ -120,20 +134,21 @@ margin-top: 10rem;
 
 .Main-text {
   padding: 2rem;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.letters{
+  padding: 2rem;
 }
 
 .Navbar{
-
-
   text-align: center;
-  
 }
  #home-button{
   margin:3rem;
   width: 20%;
 }
-/*
+/*home-button
 #next-letter {
   position: relative;
   width: 120px;

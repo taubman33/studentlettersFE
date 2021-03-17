@@ -1,1 +1,3 @@
-# studentlettersFE
+On the last day of our Software Engineering Immersive class at General Assembly, we wrote "Letters to the next cohort" in the hopes of passing some of the wisdom and experience that our students gained through their journey off to our next batch of students. Needing a good way to present these letters to the next students, I sent out a message in our class's Slack channel to see if anyone would be interested in building up a full stack application to store and present the letters, as well as to give some of my students some additional practice and experience, and to help build up their portfolios.
+
+The backend was created by Kel Z and Nazeer D, while myself (Jeremy T) and Michaelann A built up and styled out the front end. The data was stored in a Django database coded in Python, while the front end was built through React.
