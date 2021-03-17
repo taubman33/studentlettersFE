@@ -21,10 +21,11 @@ body {
   background: url("./Images/dark-code.jpg") center;
   background-size: contain;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 4rem;
   width: 100%;
   background-position: center;
   text-align: center;
+  
   
 }
 

@@ -4,7 +4,6 @@ import Nav from "./Nav";
 function Header(props) {
   return (
     <div className="App-header">
-      {/* <div className="Header-title"> */}
 
       <div>
         <h1 className="text"> Letters to the Next Class</h1>
@@ -14,7 +13,9 @@ function Header(props) {
         </div>
       </div>
 
-      <div className="navbar-container">{/* <Nav/> */}</div>
+      <div className="navbar-container">
+      <Nav/>
+      </div>
     </div>
   );
 }

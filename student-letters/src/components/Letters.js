@@ -27,7 +27,7 @@ function Letters(props) {
       <div className="letters">
         <h2>{`Student: ${letter && letter[num].initials}`}</h2>
         <h2>{`Location: ${letter && letter[num].location}`}</h2>
-        <h2>{`Location: ${letter && letter[num].letter}`}</h2>
+        <h2>{ `${letter && letter[num].letter}`}</h2>
         <button id="next-letter" className="button" onClick={randomNumber}>
           Next Letter
         </button>
