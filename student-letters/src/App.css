@@ -18,7 +18,7 @@ body {
 
 
 .App-header {
-  background: url("./Images/dark-code.jpg") center;
+  /* background: url("./Images/dark-code.jpg") center; */
   background-size: contain;
   margin: auto;
   margin-top: 4rem;

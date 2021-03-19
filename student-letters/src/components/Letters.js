@@ -22,7 +22,7 @@ function Letters(props) {
     }
   }
 
-  if (letter && num) {
+  if (letter && letter[num]) {
     return (
       <div className="letters">
         <h2>{`Student: ${letter && letter[num].initials}`}</h2>
