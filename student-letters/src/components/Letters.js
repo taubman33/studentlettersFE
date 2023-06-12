@@ -8,7 +8,7 @@ function Letters(props) {
 
 
   useEffect(() => {
-    fetch(`https://sei1130-letters.herokuapp.com/students`)
+    fetch(`https://studentlettersbackend-production.up.railway.app/api/letters`)
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
